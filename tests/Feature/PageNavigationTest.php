@@ -278,4 +278,23 @@ class PageNavigationTest extends TestCase
         $whatIsResponse->assertSee('js-discover-dropdown-toggle active', false);
         $whatIsResponse->assertSee('discover-drop-item is-current', false);
     }
+
+    /**
+     * Test that the Privacy Policy page loads successfully.
+     */
+    public function test_privacy_policy_page_loads_successfully(): void
+    {
+        $response = $this->get(route('privacy-policy'));
+
+        $response->assertStatus(200);
+        $response->assertSee('Privacy Policy');
+        $response->assertSee('TRUST & TRANSPARENCY', false);
+        $response->assertSee('Table of Contents');
+        $response->assertSee('Our Core Privacy Commitment');
+        $response->assertSee('Information We Collect');
+        $response->assertSee('How We Use Your Information');
+        $response->assertSee('Affiliate Tracking & Merchant Cookies', false);
+        $response->assertSee('Data Security & Storage', false);
+        $response->assertSee('privacy@zoogol.in');
+    }
 }

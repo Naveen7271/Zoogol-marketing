@@ -9,3 +9,4 @@ Route::get('/why-zoogol', [PageController::class, 'whyZoogol'])->name('why-zoogo
 Route::get('/how-to-start', [PageController::class, 'howToStart'])->name('how-to-start');
 Route::get('/how-zoogol-works', [PageController::class, 'howZoogolWorks'])->name('how-zoogol-works');
 Route::get('/refer-and-earn', [PageController::class, 'referAndEarn'])->name('refer-and-earn');
+Route::get('/privacy-policy', [PageController::class, 'privacyPolicy'])->name('privacy-policy');

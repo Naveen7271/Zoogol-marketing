@@ -71,4 +71,12 @@ class PageController extends Controller
     {
         return view('pages.refer-and-earn');
     }
+
+    /**
+     * Show the Privacy Policy page.
+     */
+    public function privacyPolicy(): View
+    {
+        return view('pages.privacy-policy');
+    }
 }

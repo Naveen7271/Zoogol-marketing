@@ -58,6 +58,7 @@
                         <li><a href="{{ route('what-is-zoogol') }}">What is ZOOGOL</a></li>
                         <li><a href="{{ route('why-zoogol') }}">Why ZOOGOL</a></li>
                         <li><a href="{{ route('how-to-start') }}">HOW TO START</a></li>
+                        <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
                     </ul>
                 </div>
 
@@ -89,7 +90,7 @@
 
             <div class="footer-bottom-bar">
                 <p>&copy; {{ date('Y') }} Zoogol. All rights reserved. Get instant cashback on every purchase.</p>
-                <p>100% Free Lifetime Membership</p>
+                <p><a href="{{ route('privacy-policy') }}" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Privacy Policy</a> &bull; 100% Free Lifetime Membership</p>
             </div>
         </div>
     </footer>
